@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Genesis</RootNamespace>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageIcon>logo.png</PackageIcon>
+        <Company>Genomancer</Company>
+        <PackageProjectUrl>https://github.com/Doomer3D/Genesis.FractionalIndexing</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Doomer3D/Genesis.FractionalIndexing</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <SignAssembly>False</SignAssembly>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>$(AssemblyVersion)</FileVersion>
+        <Version>$(AssemblyVersion)</Version>
+        <PackageTags>fractional-indexing;sorting;order;algorithm</PackageTags>
+        <Authors>Doomer3D</Authors>
+        <Title>Genesis.FractionalIndexing</Title>
+        <Description>A high-performance implementation of fractional indexing (based on rocicorp/fractional-indexing) allowing insertion of elements between others without reordering the entire sequence. Supports custom alphabets and deterministic key generation.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\resources\logo.png" Link="logo.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+</Project>
